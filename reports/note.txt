@@ -1,0 +1,26 @@
+dataset source: 
+- https://www.kaggle.com/datasets/arnabchaki/data-science-salaries-2023
+- https://ai-jobs.net/salaries/download/ (accessed on September 6, 2023)
+
+References MLflow:
+https://www.youtube.com/watch?v=HZNbLCSdQ2U
+
+References Streamlit:
+https://docs.streamlit.io/library/advanced-features/forms (st.selectbox())
+
+Limitation:
+1. This model is for educational purposes only and demonstrate how machine learning is works. Not for production phase.
+2. This dataset has been taken from 2020-2023 (Latest downloaded: September 6, 2023 at 09:58 AM). Therefore, if you use this model in 3-5+ years later to predict how much your salary will be, maybe it's not accurate anymore.
+
+Conclusion:
+1. The best model used for salary prediction is XGBoost.
+2. The prediction results can be off by approximately US$ 38897 (MAE) from the actual price, or in percentage terms the salary prediction will be off by approximately 31.82% (MAPE) from the actual salary.
+3. Experience level is the most importance feature, the higher your experience, the greater the salary is. (in this order: Entry-level / Junior (EN), Mid-level / Intermediate (MI), Senior-level / Expert (SE), Executive-level / Director (EX)).
+
+Recommendation:
+Things that can be done to improve model performance:
+- Add some features such as:
+a. experience year: How many years of experience in that field.
+- Collect more data
+- Add more parameters when perform hyperparameter tuning to get best parameters
+- Try more complex model like Deep Learning
